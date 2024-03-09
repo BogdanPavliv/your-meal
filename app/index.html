@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/style.min.css" />
+
+		<meta name="description" content="YourMeal — доставка їжі в Києві!"> 
+		<meta name="keywords" content="доставка"> 
+
+		<meta property="og:title" content="YourMeal — доставка їжі в Києві!" />
+		<meta property="og:description" content="YourMeal — доставка їжі в Києві!" />
+		<meta property="og:image" content="./images/head/burger.svg" />
+
+		<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="256x256" href="./images/favicon/android-chrome-256x256.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-chrome-192x192.png">
+		<link rel="icon" type="image/png" sizes="150x150" href="./images/favicon/mstile-150x150.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./images/favicon/site.webmanifest">
+		<link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+
+		<title>YourMeal — доставка їжі в Києві!</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header lazy" data-src="./images/top/top-bg.webp" data-src-replace-webp="./images/top/top-bg.png">  
+			    <a href="#" class="header__logo">
+			        <img class="header__logo--img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/icons/logo.svg" alt="Logo" width="150" height="29">
+			    </a>
+			    <div class="header__textcontent">
+					<img class="header__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/head/burger.svg" alt="Burger" width="326" height="326">
+					<div class="header__text">
+						<h1 class="header__title">Тільки<br><span>найсоковитіші бургери!</span></h1>
+						<h2 class="header__subtitle">Безкоштовна доставка від <span>599 гривень</span></h2>
+					</div>
+				</div>
+			</header>
+			
+			<main class="main">
+				<section class="section section-catalog">
+					<div class="section__header">
+						<nav class="catalog-nav">
+						<ul class="catalog-nav__wrapper">
+							<li class="catalog-nav__item">
+								<a class="catalog-nav__btn" href="#tab-burgers" data-filter="burgers">
+									<img class="catalog-nav__btn--img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/filter/Бургери.svg" alt="Бургери" width="24" height="24">
+									Бургери
+								</a>
+							</li>
+							<li class="catalog-nav__item">
+								<a class="catalog-nav__btn" href="#tab-snacks" data-filter="snacks">
+									<img class="catalog-nav__btn--img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/filter/Закуски.svg" alt="Закуски" width="24" height="24">
+									Закуски
+								</a>
+							</li>
+							<li class="catalog-nav__item">
+								<a class="catalog-nav__btn" href="#tab-hotdogs" data-filter="hotdogs">
+									<img class="catalog-nav__btn--img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/filter/Хот-доги.svg" alt="Хот-доги" width="24" height="24">
+									Хот-доги
+								</a>
+							</li>
+							<li class="catalog-nav__item">
+								<a class="catalog-nav__btn" href="#tab-combo" data-filter="combo">
+									<img class="catalog-nav__btn--img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/filter/Комбо.svg" alt="Комбо" width="24" height="24">
+									Комбо
+								</a>
+							</li>
+							<li class="catalog-nav__item">
+								<a class="catalog-nav__btn" href="#tab-shawarma" data-filter="shawarma">
+									<img class="catalog-nav__btn--img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/filter/Шаурма.svg" alt="Шаурма" width="24" height="24">
+									Шаурма
+								</a>
+							</li>
+							<li class="catalog-nav__item">
+								<a class="catalog-nav__btn" href="#tab-pizza" data-filter="pizza">
+									<img class="catalog-nav__btn--img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/filter/Піца.svg" alt="Піца" width="24" height="24">
+									Піца
+								</a>
+							</li>
+							<li class="catalog-nav__item">
+								<a class="catalog-nav__btn" href="#tab-wok" data-filter="wok">
+									<img class="catalog-nav__btn--img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/filter/Вок.svg" alt="Вок" width="24" height="24">
+									Вок
+								</a>
+							</li>
+							<li class="catalog-nav__item">
+								<a class="catalog-nav__btn" href="#tab-desserts" data-filter="desserts">
+									<img class="catalog-nav__btn--img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/filter/Десерти.svg" alt="Десерти" width="24" height="24">
+									Десерти
+								</a>
+							</li>
+							<li class="catalog-nav__item">
+								<a class="catalog-nav__btn" href="#tab-sauces" data-filter="sauces">
+									<img class="catalog-nav__btn--img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/filter/Соуси.svg" alt="Соуси" width="24" height="24">
+									Соуси
+								</a>
+							</li>
+						</ul>
+						</nav>
+					</div>
+					<div class="container">		
+						<div class="section__inner">
+							<div class="section__card--wrapper">
+								<div class="section__card">
+									<div class="section__card--name">Корзина</div>
+									<div class="section__card--number js-cart-total-count-items">0</div>
+									<div class="section__card--text cart__empty">Тут поки що порожньо :(</div>
+									<div class="cart">
+										<div class="form cart__form">
+											<div class="cart__items js-cart">
+																	
+											</div>
+											<div class="cart__totals">
+												Всього: <span class="cart__bold"><span class="js-cart-total-price">1279</span> грн.</span>
+											</div>
+											<button class="popup-product__btn" data-popup="popup-delivery">Оформити замовлення</button>
+											<div class="cart__bottom">
+												<img class="cart__bottom--img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/cart/delivery.svg" alt="Delivery" width="24" height="24">
+												<p class="cart__bottom--text">Безкоштовна доставка</p>
+												<button class="cart__collapse--btn">Згорнути</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="catalog__wrapper">
+								<div class="catalog__title">
+									Бургери
+								</div>
+								<div class="catalog js-catalog">
+	
+									<div id="tab-burgers" class="catalog__content-item">
+										<div class="catalog__item" data-category="burgers">
+											<div class="product catalog__product" data-product-name="М'ясна бомба" data-product-price="200" data-product-weight="520" data-product-src="./images/section-catalog/burger-1.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/burger-1.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/burger-1.jpg" alt="Burger 1" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">200</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">М'ясна бомба</div>
+													<div class="product__weight--value"><span class="product__weight">520</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Супер м'ясна насолода! Велика рубана котлета зі свіжого яловичого м'яса підкорить вас своєю соковитістю, а хрумке листя салату додасть свіжості.</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+														
+															<li class="product__description--list-item">Пшенична булочка</li>
+															<li class="product__description--list-item">Котлети з яловичини</li>
+															<li class="product__description--list-item">Червона цибуля</li>
+															<li class="product__description--list-item">Листя салату</li>
+															<li class="product__description--list-item">Соус гірчичний</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">430</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="burgers">
+											<div class="product catalog__product" data-product-name="Супер сирний" data-product-price="195" data-product-weight="512" data-product-src="./images/section-catalog/burger-2.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/burger-2.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/burger-2.jpg" alt="Burger 2" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">195</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Супер сирний</div>
+													<div class="product__weight--value"><span class="product__weight">512</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Супер м'ясна насолода! Велика рубана котлета зі свіжого яловичого м'яса підкорить вас своєю соковитістю, а хрумке листя салату додасть свіжості.</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Пшенична булочка</li>
+															<li class="product__description--list-item">Котлети з яловичини</li>
+															<li class="product__description--list-item">Червона цибуля</li>
+															<li class="product__description--list-item">Листя салату</li>
+															<li class="product__description--list-item">Соус гірчичний</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">450</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="burgers">
+											<div class="product catalog__product" data-product-name="Сирний" data-product-price="220" data-product-weight="580" data-product-src="./images/section-catalog/burger-3.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/burger-3.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/burger-3.jpg" alt="Burger 3" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">220</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Сирний</div>
+													<div class="product__weight--value"><span class="product__weight">580</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Супер м'ясна насолода! Велика рубана котлета зі свіжого яловичого м'яса підкорить вас своєю соковитістю, а хрумке листя салату додасть свіжості.</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Пшенична булочка</li>
+															<li class="product__description--list-item">Котлети з яловичини</li>
+															<li class="product__description--list-item">Червона цибуля</li>
+															<li class="product__description--list-item">Листя салату</li>
+															<li class="product__description--list-item">Соус гірчичний</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">420</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="burgers">
+											<div class="product catalog__product" data-product-name="Тяжкий удар" data-product-price="180" data-product-weight="470" data-product-src="./images/section-catalog/burger-4.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/burger-4.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/burger-4.jpg" alt="Burger 4" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">180</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Тяжкий удар</div>
+													<div class="product__weight--value"><span class="product__weight">470</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Супер м'ясна насолода! Велика рубана котлета зі свіжого яловичого м'яса підкорить вас своєю соковитістю, а хрумке листя салату додасть свіжості.</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Пшенична булочка</li>
+															<li class="product__description--list-item">Котлети з яловичини</li>
+															<li class="product__description--list-item">Червона цибуля</li>
+															<li class="product__description--list-item">Листя салату</li>
+															<li class="product__description--list-item">Соус гірчичний</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">450</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="burgers">
+											<div class="product catalog__product" data-product-name="Вічна класика" data-product-price="230" data-product-weight="450" data-product-src="./images/section-catalog/burger-5.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/burger-5.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/burger-5.jpg" alt="Burger 5" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">230</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Вічна класика</div>
+													<div class="product__weight--value"><span class="product__weight">450</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Супер м'ясна насолода! Велика рубана котлета зі свіжого яловичого м'яса підкорить вас своєю соковитістю, а хрумке листя салату додасть свіжості.</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Пшенична булочка</li>
+															<li class="product__description--list-item">Котлети з яловичини</li>
+															<li class="product__description--list-item">Червона цибуля</li>
+															<li class="product__description--list-item">Листя салату</li>
+															<li class="product__description--list-item">Соус гірчичний</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">420</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="burgers">
+											<div class="product catalog__product" data-product-name="Італійський" data-product-price="210" data-product-weight="510" data-product-src="./images/section-catalog/burger-6.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/burger-6.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/burger-6.jpg" alt="Burger 6" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">210</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Італійський</div>
+													<div class="product__weight--value"><span class="product__weight">510</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Супер м'ясна насолода! Велика рубана котлета зі свіжого яловичого м'яса підкорить вас своєю соковитістю, а хрумке листя салату додасть свіжості.</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Пшенична булочка</li>
+															<li class="product__description--list-item">Котлети з яловичини</li>
+															<li class="product__description--list-item">Червона цибуля</li>
+															<li class="product__description--list-item">Листя салату</li>
+															<li class="product__description--list-item">Соус гірчичний</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">450</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+									</div>
+	
+									<div id="tab-snacks" class="catalog__content-item">
+										<div class="catalog__item" data-category="snacks">
+											<div class="product catalog__product" data-product-name="Соте з морепродуктів у вершковому соусі" data-product-price="560" data-product-weight="300" data-product-src="./images/section-catalog/snacks-1.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/snacks-1.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/snacks-1.jpg" alt="Snacks 1" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">560</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Соте з морепродуктів у вершковому соусі</div>
+													<div class="product__weight--value"><span class="product__weight">300</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Креветки тигрові, кальмар, мідії, маслини, помідори черрі, печериці, часник, соус вершковий.</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Креветки тигрові</li>
+															<li class="product__description--list-item">Кальмар</li>
+															<li class="product__description--list-item">Мідії</li>
+															<li class="product__description--list-item">Маслини</li>
+															<li class="product__description--list-item">Помідори черрі</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">250</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="snacks">
+											<div class="product catalog__product" data-product-name="Соте з тигрових креветок у вершковому соусі" data-product-price="560" data-product-weight="270" data-product-src="./images/section-catalog/snacks-2.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/snacks-2.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/snacks-2.jpg" alt="Snacks 2" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">560</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Соте з тигрових креветок у вершковому соусі</div>
+													<div class="product__weight--value"><span class="product__weight">270</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Креветки тигрові 15 шт, часник, петрушка, сир пармезан, соус вершковий.</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Креветки тигрові 15 шт</li>
+															<li class="product__description--list-item">Часник</li>
+															<li class="product__description--list-item">Петрушка</li>
+															<li class="product__description--list-item">Сир пармезан</li>
+															<li class="product__description--list-item">Соус вершковий</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">130</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="snacks">
+											<div class="product catalog__product" data-product-name="Чіпси з морепродуктами" data-product-price="560" data-product-weight="30" data-product-src="./images/section-catalog/snacks-3.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/snacks-3.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/snacks-3.jpg" alt="Snacks 3" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">560</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Чіпси з морепродуктами</div>
+													<div class="product__weight--value"><span class="product__weight">30</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Гострі рисові чіпси з морепродуктами.</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Рисові чіпси 15 шт</li>
+															<li class="product__description--list-item">Спеції</li>
+															<li class="product__description--list-item">Соус на вибір</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">540</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="snacks">
+											<div class="product catalog__product" data-product-name="Цибулеві кільця" data-product-price="560" data-product-weight="180" data-product-src="./images/section-catalog/snacks-4.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/snacks-4.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/snacks-4.jpg" alt="Snacks 4" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">560</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Цибулеві кільця</div>
+													<div class="product__weight--value"><span class="product__weight">180</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Хрумкі цибулеві кільця, соус на вибір: кисло-солодкий, спайсі, часниковий (150/30г.).</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Хрумкі цибулеві кільця</li>
+															<li class="product__description--list-item">Соус на вибір: кисло-солодкий, спайсі, часниковий (150/30г.)</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">630</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="snacks">
+											<div class="product catalog__product" data-product-name="Картопляні діпи з соусом на вибір" data-product-price="120" data-product-weight="180" data-product-src="./images/section-catalog/snacks-5.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/snacks-5.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/snacks-5.jpg" alt="Snacks 5" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">120</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Картопляні діпи з соусом на вибір</div>
+													<div class="product__weight--value"><span class="product__weight">180</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Картопляні діпи, соус на вибір: кисло-солодкий, спайсі, часниковий (100/30г.).</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Картопляні діпи</li>
+															<li class="product__description--list-item">Соус на вибір: кисло-солодкий, спайсі, часниковий (100/30г.).</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">300</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="snacks">
+											<div class="product catalog__product" data-product-name="Картопляні кульки з соусом на вибір" data-product-price="120" data-product-weight="180" data-product-src="./images/section-catalog/snacks-6.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/snacks-6.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/snacks-6.jpg" alt="Snacks 6" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">120</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Картопляні кульки з соусом на вибір</div>
+													<div class="product__weight--value"><span class="product__weight">180</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Кульки із картопляного пюре, соус на вибір: кисло-солодкий, спайсі, часниковий (150/30г.).</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Кульки із картопляного пюре</li>
+															<li class="product__description--list-item">Соус на вибір: кисло-солодкий, спайсі, часниковий (150/30г.).</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">120</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+									</div>
+	
+									
+									<div id="tab-hotdogs" class="catalog__content-item">
+										<div class="catalog__item" data-category="hotdogs">
+											<div class="product catalog__product" data-product-name="Фірмовий" data-product-price="120" data-product-weight="180" data-product-src="./images/section-catalog/hotdog-1.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/hotdog-1.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/hotdog-1.jpg" alt="Hotdog 1" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">120</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Фірмовий</div>
+													<div class="product__weight--value"><span class="product__weight">180</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Булка, соус Кисло-солодкий, Сосиска "Пікнік", бекон смажений, огірок квашений, смажені гриби, цибуля синя</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Булка</li>
+															<li class="product__description--list-item">Cоус Кисло-солодкий</li>
+															<li class="product__description--list-item">Сосиска "Пікнік"</li>
+															<li class="product__description--list-item">Бекон смажений</li>
+															<li class="product__description--list-item">Огірок квашений</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">400</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="hotdogs">
+											<div class="product catalog__product" data-product-name="Італійський" data-product-price="105" data-product-weight="180" data-product-src="./images/section-catalog/hotdog-2.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/hotdog-2.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/hotdog-2.jpg" alt="Hotdog 2" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">105</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Італійський</div>
+													<div class="product__weight--value"><span class="product__weight">180</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Булка, соус Бешамель, сосиска "Прем'єра", помідор, рукола, пармезан</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Булка</li>
+															<li class="product__description--list-item">Cоус Бешамель</li>
+															<li class="product__description--list-item">Сосиска "Прем'єра"</li>
+															<li class="product__description--list-item">Помідор</li>
+															<li class="product__description--list-item">Рукола</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">420</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="hotdogs">
+											<div class="product catalog__product" data-product-name="Класичний" data-product-price="105" data-product-weight="200" data-product-src="./images/section-catalog/hotdog-3.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/hotdog-3.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/hotdog-3.jpg" alt="Hotdog 3" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">105</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Класичний</div>
+													<div class="product__weight--value"><span class="product__weight">200</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Булка, сосиска, майонез, кетчуп, гірчиця</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Булка</li>
+															<li class="product__description--list-item">Сосиска "Прем'єра"</li>
+															<li class="product__description--list-item">Майонез</li>
+															<li class="product__description--list-item">Кетчуп</li>
+															<li class="product__description--list-item">Гірчиця</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">500</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="hotdogs">
+											<div class="product catalog__product" data-product-name="Американський" data-product-price="105" data-product-weight="200" data-product-src="./images/section-catalog/hotdog-4.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/hotdog-4.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/hotdog-4.jpg" alt="Hotdog 4" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">105</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Американський</div>
+													<div class="product__weight--value"><span class="product__weight">200</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Булка, соус Гірчичний, сосиска "З сиром", коул-слоу (містить цибулю), огірок квашений</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Булка</li>
+															<li class="product__description--list-item">Соус Гірчичний</li>
+															<li class="product__description--list-item">Сосиска "З сиром"</li>
+															<li class="product__description--list-item">Коул-слоу (містить цибулю)</li>
+															<li class="product__description--list-item">Огірок квашений</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">330</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="hotdogs">
+											<div class="product catalog__product" data-product-name="Німецький" data-product-price="105" data-product-weight="220" data-product-src="./images/section-catalog/hotdog-5.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/hotdog-5.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/hotdog-5.jpg" alt="Hotdog 5" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">105</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Німецький</div>
+													<div class="product__weight--value"><span class="product__weight">220</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Булка, соус Барбекю, сосика "Пікнік", бекон смажений, огірок квашений</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Булка</li>
+															<li class="product__description--list-item">Соус Барбекю</li>
+															<li class="product__description--list-item">Сосика "Пікнік"</li>
+															<li class="product__description--list-item">Бекон смажений</li>
+															<li class="product__description--list-item">Огірок квашений</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">330</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="hotdogs">
+											<div class="product catalog__product" data-product-name="Мексиканський" data-product-price="105" data-product-weight="220" data-product-src="./images/section-catalog/hotdog-6.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/hotdog-6.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/hotdog-6.jpg" alt="Hotdog 6" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">105</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Мексиканський</div>
+													<div class="product__weight--value"><span class="product__weight">220</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Булка, соус Кисло-солодкий, Сосиска "Пікнік", бекон смажений, огірок квашений, смажені гриби, цибуля синя</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Булка</li>
+															<li class="product__description--list-item">Соус Кисло-солодкий</li>
+															<li class="product__description--list-item">Сосика "Пікнік"</li>
+															<li class="product__description--list-item">Бекон смажений</li>
+															<li class="product__description--list-item">Огірок квашений</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">520</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+									</div>
+									
+									<div id="tab-combo" class="catalog__content-item">
+										<div class="catalog__item" data-category="combo">
+											<div class="product catalog__product" data-product-name="Фірмове меню" data-product-price="198" data-product-weight="220" data-product-src="./images/section-catalog/combo-1.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/combo-1.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/combo-1.jpg" alt="Combo 1" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">198</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Фірмове меню</div>
+													<div class="product__weight--value"><span class="product__weight">220</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Хот-дог Фірмовий, картопля фрі, Coca-Cola 0,5 л</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Булка</li>
+															<li class="product__description--list-item">Соус Кисло-солодкий</li>
+															<li class="product__description--list-item">Сосика "Пікнік"</li>
+															<li class="product__description--list-item">Картопля фрі</li>
+															<li class="product__description--list-item">Coca-Cola 0,5 л</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">530</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="combo">
+											<div class="product catalog__product" data-product-name="Біг Батько меню" data-product-price="198" data-product-weight="220" data-product-src="./images/section-catalog/combo-2.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/combo-2.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/combo-2.jpg" alt="Combo 2" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">198</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Біг Батько меню</div>
+													<div class="product__weight--value"><span class="product__weight">220</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Бургер Біг Батько, картопля фрі, Coca-Cola 0,5 л</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Булка</li>
+															<li class="product__description--list-item">Соус Кисло-солодкий</li>
+															<li class="product__description--list-item">Котлета</li>
+															<li class="product__description--list-item">Картопля фрі</li>
+															<li class="product__description--list-item">Coca-Cola 0,5 л</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">330</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="combo">
+											<div class="product catalog__product" data-product-name="Німецьке меню" data-product-price="180" data-product-weight="220" data-product-src="./images/section-catalog/combo-3.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/combo-3.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/combo-3.jpg" alt="Combo 3" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">180</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Німецьке меню</div>
+													<div class="product__weight--value"><span class="product__weight">220</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Хот-дог Німецький, картопля фрі, Coca-Cola 0,5 л</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Булка</li>
+															<li class="product__description--list-item">Соус Кисло-солодкий</li>
+															<li class="product__description--list-item">Сосиска</li>
+															<li class="product__description--list-item">Картопля фрі</li>
+															<li class="product__description--list-item">Coca-Cola 0,5 л</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">450</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="combo">
+											<div class="product catalog__product" data-product-name="Нормальне меню" data-product-price="252" data-product-weight="220" data-product-src="./images/section-catalog/combo-4.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/combo-4.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/combo-4.jpg" alt="Combo 4" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">252</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Нормальне меню</div>
+													<div class="product__weight--value"><span class="product__weight">220</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Бургер Нормальний, картопля фрі, Coca-Cola 0,5 л</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Булка</li>
+															<li class="product__description--list-item">Соус Кисло-солодкий</li>
+															<li class="product__description--list-item">Котлета</li>
+															<li class="product__description--list-item">Картопля фрі</li>
+															<li class="product__description--list-item">Coca-Cola 0,5 л</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">460</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="combo">
+											<div class="product catalog__product" data-product-name="Американське меню" data-product-price="252" data-product-weight="220" data-product-src="./images/section-catalog/combo-5.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/combo-5.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/combo-5.jpg" alt="Combo 5" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">252</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Американське меню</div>
+													<div class="product__weight--value"><span class="product__weight">220</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Хот-дог Американський, картопля фрі, Coca-Cola 0,5 л</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Булка</li>
+															<li class="product__description--list-item">Соус Кисло-солодкий</li>
+															<li class="product__description--list-item">Сосиска</li>
+															<li class="product__description--list-item">Картопля фрі</li>
+															<li class="product__description--list-item">Coca-Cola 0,5 л</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">480</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="combo">
+											<div class="product catalog__product" data-product-name="Сирне меню" data-product-price="252" data-product-weight="220" data-product-src="./images/section-catalog/combo-6.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/combo-6.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/combo-6.jpg" alt="Combo 6" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">252</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Сирне меню</div>
+													<div class="product__weight--value"><span class="product__weight">220</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Бургер Сирний, картопля фрі, Coca-Cola 0,5 л</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Булка</li>
+															<li class="product__description--list-item">Соус Кисло-солодкий</li>
+															<li class="product__description--list-item">Котлета</li>
+															<li class="product__description--list-item">Картопля фрі</li>
+															<li class="product__description--list-item">Coca-Cola 0,5 л</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">450</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+									</div>
+	
+									<div id="tab-shawarma" class="catalog__content-item">
+										<div class="catalog__item" data-category="shawarma">
+											<div class="product catalog__product" data-product-name="Моя курочка" data-product-price="119" data-product-weight="370" data-product-src="./images/section-catalog/shawarma-1.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/shawarma-1.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/shawarma-1.jpg" alt="Shawarma 1" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">119</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Моя курочка</div>
+													<div class="product__weight--value"><span class="product__weight">370</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Лаваш, філе куряче сувід, сир Чедер, салат айсберг, морква по-корейськи, огірок маринований, помідор, соус йогуртовий</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Лаваш</li>
+															<li class="product__description--list-item">Філе куряче сувід</li>
+															<li class="product__description--list-item">Сир Чедер</li>
+															<li class="product__description--list-item">Салат айсберг</li>
+															<li class="product__description--list-item">Морква по-корейськи</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">500</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="shawarma">
+											<div class="product catalog__product" data-product-name="М'ясна симфонія" data-product-price="142" data-product-weight="350" data-product-src="./images/section-catalog/shawarma-2.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/shawarma-2.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/shawarma-2.jpg" alt="Shawarma 2" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">142</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">М'ясна симфонія</div>
+													<div class="product__weight--value"><span class="product__weight">350</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Лаваш, філе курячого стегна сувід, запечена свинина, морква по-корейськи, огірок, айсберг, халапеньо, кінза, кетчуп, майонез</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Лаваш</li>
+															<li class="product__description--list-item">Філе куряче сувід</li>
+															<li class="product__description--list-item">Запечена свинина</li>
+															<li class="product__description--list-item">Огірок</li>
+															<li class="product__description--list-item">Морква по-корейськи</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">520</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="shawarma">
+											<div class="product catalog__product" data-product-name="Солідний" data-product-price="134" data-product-weight="350" data-product-src="./images/section-catalog/shawarma-3.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/shawarma-3.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/shawarma-3.jpg" alt="Shawarma 3" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">134</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Солідний</div>
+													<div class="product__weight--value"><span class="product__weight">350</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Лаваш, запечена свинина, пекінська капуста, свіжа цибуля, помідор, соус фірмовий, соус барбекю</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Лаваш</li>
+															<li class="product__description--list-item">Філе куряче сувід</li>
+															<li class="product__description--list-item">Запечена свинина</li>
+															<li class="product__description--list-item">Пекінська капуста</li>
+															<li class="product__description--list-item">Свіжа цибуля</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">510</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="shawarma">
+											<div class="product catalog__product" data-product-name="Кумтеляпасе" data-product-price="225" data-product-weight="360" data-product-src="./images/section-catalog/shawarma-4.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/shawarma-4.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/shawarma-4.jpg" alt="Shawarma 4" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">225</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Кумтеляпасе</div>
+													<div class="product__weight--value"><span class="product__weight">360</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Лаваш, телятина томлена, салат айсберг, салат Коул-слоу, помідор, огірок маринований, соус барбекю, соус фірмовий, кінза</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Лаваш</li>
+															<li class="product__description--list-item">Телятина томлена</li>
+															<li class="product__description--list-item">Салат айсберг</li>
+															<li class="product__description--list-item">Салат Коул-слоу</li>
+															<li class="product__description--list-item">Соус фірмовий</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">540</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="shawarma">
+											<div class="product catalog__product" data-product-name="Шаурма XXL" data-product-price="250" data-product-weight="495" data-product-src="./images/section-catalog/shawarma-5.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/shawarma-5.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/shawarma-5.jpg" alt="Shawarma 5" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">250</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Шаурма XXL</div>
+													<div class="product__weight--value"><span class="product__weight">495</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Хрусткий випечений лаваш, обсмажене куряче м'ясо-гриль, свіжа капуста, томати, Кримська цибулька, маринований огірок. Ноту пікантного смаку додає наша Оригінальна заправка на натуральній основі.</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Лаваш</li>
+															<li class="product__description--list-item">Куряче м'ясо-гриль</li>
+															<li class="product__description--list-item">Салат айсберг</li>
+															<li class="product__description--list-item">Свіжа капуста</li>
+															<li class="product__description--list-item">Томати</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">490</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="shawarma">
+											<div class="product catalog__product" data-product-name="Шаурма Подвійна" data-product-price="210" data-product-weight="400" data-product-src="./images/section-catalog/shawarma-6.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/shawarma-6.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/shawarma-6.jpg" alt="Shawarma 6" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">210</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Шаурма Подвійна</div>
+													<div class="product__weight--value"><span class="product__weight">400</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Хрусткий випечений лаваш, обсмажене куряче м'ясо-гриль, свіжа капуста, томати, Кримська цибулька, маринований огірок. Ноту пікантного смаку додає наша Оригінальна заправка на натуральній основі.</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Лаваш</li>
+															<li class="product__description--list-item">Куряче м'ясо-гриль</li>
+															<li class="product__description--list-item">Кримська цибулька</li>
+															<li class="product__description--list-item">Свіжа капуста</li>
+															<li class="product__description--list-item">Томати</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">390</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+									</div>
+									
+									<div id="tab-pizza" class="catalog__content-item">
+										<div class="catalog__item" data-category="pizza">
+											<div class="product catalog__product" data-product-name="Салямі" data-product-price="560" data-product-weight="510" data-product-src="./images/section-catalog/pizza-1.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/pizza-1.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/pizza-1.png" alt="Pizza 1" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">560</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Салямі</div>
+													<div class="product__weight--value"><span class="product__weight">510</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Салямі, картопля і морква, огірки мариновані, моцарелла, курча, шинка та французький соус</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Салямі</li>
+															<li class="product__description--list-item">Картопля і морква</li>
+															<li class="product__description--list-item">огірки мариновані</li>
+															<li class="product__description--list-item">Моцарелла</li>
+															<li class="product__description--list-item">Курча</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">280</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="pizza">
+											<div class="product catalog__product" data-product-name="Хіт" data-product-price="560" data-product-weight="510" data-product-src="./images/section-catalog/pizza-2.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/pizza-2.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/pizza-2.png" alt="Pizza 2" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">560</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Хіт</div>
+													<div class="product__weight--value"><span class="product__weight">510</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Картопля та морква, огірки мариновані, моцарелла, курча, шинка та французький соус</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Картопля та морква</li>
+															<li class="product__description--list-item">Огірки мариновані</li>
+															<li class="product__description--list-item">Моцарелла</li>
+															<li class="product__description--list-item">Курча</li>
+															<li class="product__description--list-item">Шинка та французький соус</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">310</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="pizza">
+											<div class="product catalog__product" data-product-name="Шинка-гриби" data-product-price="560" data-product-weight="510" data-product-src="./images/section-catalog/pizza-3.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/pizza-3.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/pizza-3.png" alt="Pizza 3" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">560</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Шинка-гриби</div>
+													<div class="product__weight--value"><span class="product__weight">510</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Салямі, картопля і морква, огірки мариновані, моцарелла, курча, шинка та французький соус</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Салямі</li>
+															<li class="product__description--list-item">Картопля і морква</li>
+															<li class="product__description--list-item">Огірки мариновані</li>
+															<li class="product__description--list-item">Моцарелла</li>
+															<li class="product__description--list-item">Курча</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">320</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="pizza">
+											<div class="product catalog__product" data-product-name="Карбонара" data-product-price="560" data-product-weight="510" data-product-src="./images/section-catalog/pizza-4.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/pizza-4.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/pizza-4.png" alt="Pizza 4" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">560</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Карбонара</div>
+													<div class="product__weight--value"><span class="product__weight">510</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Салямі, картопля і морква, огірки мариновані, моцарелла, курча, шинка та французький соус</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Салямі</li>
+															<li class="product__description--list-item">Картопля і морква</li>
+															<li class="product__description--list-item">Огірки мариновані</li>
+															<li class="product__description--list-item">Моцарелла</li>
+															<li class="product__description--list-item">Курча</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">340</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="pizza">
+											<div class="product catalog__product" data-product-name="Фірмова" data-product-price="560" data-product-weight="510" data-product-src="./images/section-catalog/pizza-5.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/pizza-5.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/pizza-5.png" alt="Pizza 5" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">560</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Фірмова</div>
+													<div class="product__weight--value"><span class="product__weight">510</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Томатно-вершковий соус, бекон, моцарелла</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Томатно-вершковий соус</li>
+															<li class="product__description--list-item">Бекон</li>
+															<li class="product__description--list-item">Моцарелла</li>
+															<li class="product__description--list-item">Огірки мариновані</li>
+															<li class="product__description--list-item">Курча</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">350</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="pizza">
+											<div class="product catalog__product" data-product-name="Асорті" data-product-price="560" data-product-weight="510" data-product-src="./images/section-catalog/pizza-6.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/pizza-6.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/pizza-6.png" alt="Pizza 6" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">560</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Асорті</div>
+													<div class="product__weight--value"><span class="product__weight">510</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Картопля, моцарелла, курча, гриби, шинка та французький соус</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Картопля</li>
+															<li class="product__description--list-item">Моцарелла</li>
+															<li class="product__description--list-item">Курча</li>
+															<li class="product__description--list-item">Гриби</li>
+															<li class="product__description--list-item">Шинка та французький соус</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">400</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+									</div>
+									
+									<div id="tab-wok" class="catalog__content-item">
+										<div class="catalog__item" data-category="wok">
+											<div class="product catalog__product" data-product-name="Пад тай з креветкою темпура" data-product-price="309" data-product-weight="220" data-product-src="./images/section-catalog/wok-1.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/wok-1.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/wok-1.jpg" alt="Wok 1" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">309</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Пад тай з креветкою темпура</div>
+													<div class="product__weight--value"><span class="product__weight">220</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Локшина рисова, креветки темпура, овочевий мікс, яєчний продукт, олія часникова, соус Тамариндовий, перець чилі стручковий, цибуля зелена, лайм, горіхи кеш'ю, тайський соус</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Локшина рисова</li>
+															<li class="product__description--list-item">Креветки темпура</li>
+															<li class="product__description--list-item">Овочевий мікс</li>
+															<li class="product__description--list-item">Яєчний продукт</li>
+															<li class="product__description--list-item">Олія часникова</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">470</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="wok">
+											<div class="product catalog__product" data-product-name="Курка в кисло-солодкому соусі 🌶" data-product-price="309" data-product-weight="220" data-product-src="./images/section-catalog/wok-2.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/wok-2.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/wok-2.jpg" alt="Wok 2" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">309</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Курка в кисло-солодкому соусі 🌶</div>
+													<div class="product__weight--value"><span class="product__weight">220</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Курка в хрусткому клярі та кисло-солодкому соусі посипана білим кунжутом, подається з рисом.</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Курка</li>
+															<li class="product__description--list-item">Кисло-солодкий соус</li>
+															<li class="product__description--list-item">Білий кунжут</li>
+															<li class="product__description--list-item">Рис</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">490</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="wok">
+											<div class="product catalog__product" data-product-name="Удон з куркою та горіхом кеш’ю" data-product-price="209" data-product-weight="220" data-product-src="./images/section-catalog/wok-3.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/wok-3.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/wok-3.jpg" alt="Wok 3" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">209</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Удон з куркою та горіхом кеш’ю</div>
+													<div class="product__weight--value"><span class="product__weight">220</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Локшина Удон, куряче стегно, горіх кеш'ю, овочевий мікс, боби едамаме, азійський гриб, соус Унагі, соус Пад Тай, соус Часниковий, мікс кунжуту, сушена цибуля </div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Локшина Удон</li>
+															<li class="product__description--list-item">Куряче стегно</li>
+															<li class="product__description--list-item">Горіх кеш'ю</li>
+															<li class="product__description--list-item">Овочевий мікс</li>
+															<li class="product__description--list-item">Боби едамаме</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">500</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="wok">
+											<div class="product catalog__product" data-product-name="Соба з рваною яловичиною🌶" data-product-price="209" data-product-weight="530" data-product-src="./images/section-catalog/wok-4.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/wok-4.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/wok-4.jpg" alt="Wok 4" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">209</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Соба з рваною яловичиною🌶</div>
+													<div class="product__weight--value"><span class="product__weight">530</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Соба, яловичина, гриб шіїтаке, кабачок, перець солодкий, броколі, цибуля, кукурудза бебі, сезонний салатний мікс, сушена цибуля, зелена цибуля, гострий часниковий соус</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Соба</li>
+															<li class="product__description--list-item">Яловичина</li>
+															<li class="product__description--list-item">Гриб шіїтаке</li>
+															<li class="product__description--list-item">Кабачок</li>
+															<li class="product__description--list-item">Перець солодкий</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">510</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="wok">
+											<div class="product catalog__product" data-product-name="Тяхан Ясай 🌶" data-product-price="179" data-product-weight="530" data-product-src="./images/section-catalog/wok-5.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/wok-5.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/wok-5.jpg" alt="Wok 5" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">179</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Тяхан Ясай 🌶</div>
+													<div class="product__weight--value"><span class="product__weight">530</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Оновлена рецептура Рис, гриб шіїтаке, тофу, перець солодкий, кукурудза бебі, кабачок, броколі, цибуля, морква, часник, імбир, соус Хойсін, сушена цибуля, зелена цибуля, сезонний салатний мікс</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Оновлена рецептура Рис</li>
+															<li class="product__description--list-item">Гриб шіїтаке</li>
+															<li class="product__description--list-item">Тофу</li>
+															<li class="product__description--list-item">Перець солодкий</li>
+															<li class="product__description--list-item">Кукурудза бебі</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">410</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="wok">
+											<div class="product catalog__product" data-product-name="Тай з куркою Wok" data-product-price="219" data-product-weight="500" data-product-src="./images/section-catalog/wok-6.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/wok-6.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/wok-6.jpg" alt="Wok 6" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">219</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Тай з куркою Wok</div>
+													<div class="product__weight--value"><span class="product__weight">500</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Локшина, куряче стегно, овочі, салатний мікс (змінюється сезонно), цибуля, гриб шіітаке, чилі, cоєві паростки, насіння кунжуту, часниковий соус Азія</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Локшина</li>
+															<li class="product__description--list-item">Куряче стегно</li>
+															<li class="product__description--list-item">Овочі</li>
+															<li class="product__description--list-item">Салатний мікс (змінюється сезонно)</li>
+															<li class="product__description--list-item">Цибуля</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">440</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+									</div>
+									
+	
+	
+									<div id="tab-desserts" class="catalog__content-item">
+										<div class="catalog__item" data-category="desserts">
+											<div class="product catalog__product" data-product-name="Сіннабон шоколадний" data-product-price="124" data-product-weight="125" data-product-src="./images/section-catalog/desserts-1.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/desserts-1.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/desserts-1.jpg" alt="Desserts 1" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">124</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Сіннабон шоколадний</div>
+													<div class="product__weight--value"><span class="product__weight">125</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Борошно пшеничне, какао порошок, молоко, цукор, дріжджі, яйце куряче, масло вершкове, сіль морська, кориця мелена, олія соняшникова, крем-сир, шоколад чорний</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Борошно пшеничне</li>
+															<li class="product__description--list-item">Какао порошок</li>
+															<li class="product__description--list-item">Молоко</li>
+															<li class="product__description--list-item">Цукор</li>
+															<li class="product__description--list-item">Дріжджі</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">400</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="desserts">
+											<div class="product catalog__product" data-product-name="Сіннабон з вишнею" data-product-price="124" data-product-weight="125" data-product-src="./images/section-catalog/desserts-2.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/desserts-2.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/desserts-2.jpg" alt="Desserts 2" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">124</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Сіннабон з вишнею</div>
+													<div class="product__weight--value"><span class="product__weight">125</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Борошно пшеничне, молоко, цукор, дріжджі, яйця курячі, вершкове масло, сіль морська, ванільна паста, кориця мелена, олія соняшникова, крем-сир, вишня с/м, кардамон, гвоздика</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Борошно пшеничне</li>
+															<li class="product__description--list-item">Молоко</li>
+															<li class="product__description--list-item">Цукор</li>
+															<li class="product__description--list-item">Дріжджі</li>
+															<li class="product__description--list-item">Яйця курячі</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">380</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="desserts">
+											<div class="product catalog__product" data-product-name="Сіннабон з карамеллю" data-product-price="124" data-product-weight="125"  data-product-src="./images/section-catalog/desserts-3.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/desserts-3.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/desserts-3.jpg" alt="Desserts 3" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">124</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Сіннабон з карамеллю</div>
+													<div class="product__weight--value"><span class="product__weight">125</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Борошно пшеничне, молоко, цукор, дріжджі, яйце куряче, масло вершкове, сіль морська, ванільна паста, кориця мелена, олія соняшникова, крем-сир, сироп глюкози, вершки молочні</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Борошно пшеничне</li>
+															<li class="product__description--list-item">Молоко</li>
+															<li class="product__description--list-item">Цукор</li>
+															<li class="product__description--list-item">Дріжджі</li>
+															<li class="product__description--list-item">Яйце куряче</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">410</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="desserts">
+											<div class="product catalog__product" data-product-name="Сирники" data-product-price="127" data-product-weight="240" data-product-src="./images/section-catalog/desserts-4.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/desserts-4.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/desserts-4.jpg" alt="Desserts 4" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">127</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Сирники</div>
+													<div class="product__weight--value"><span class="product__weight">240</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Сирники, карамельний соус, сметана</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Сирники</li>
+															<li class="product__description--list-item">Карамельний соус</li>
+															<li class="product__description--list-item">Сметана</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">420</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="desserts">
+											<div class="product catalog__product" data-product-name="Сирна запіканка" data-product-price="124" data-product-weight="240" data-product-src="./images/section-catalog/desserts-5.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/desserts-5.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/desserts-5.jpg" alt="Desserts 5" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">124</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Сирна запіканка</div>
+													<div class="product__weight--value"><span class="product__weight">240</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Сирна запіканка, ванільний соус</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Сирна запіканка</li>
+															<li class="product__description--list-item">ванільний соус</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">440</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="desserts">
+											<div class="product catalog__product" data-product-name="Нормальні горішки" data-product-price="155" data-product-weight="180" data-product-src="./images/section-catalog/desserts-6.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/desserts-6.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/desserts-6.jpg" alt="Desserts 6" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">155</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Нормальні горішки</div>
+													<div class="product__weight--value"><span class="product__weight">180</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Борошно, цукор, ваніль, масло, маргарин, яйця курячі, розпушувач, молоко згущене, карамель</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Борошно</li>
+															<li class="product__description--list-item">Цукор</li>
+															<li class="product__description--list-item">Ваніль</li>
+															<li class="product__description--list-item">Масло</li>
+															<li class="product__description--list-item">Маргарин</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">420</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+									</div>
+									
+	
+									<div id="tab-sauces" class="catalog__content-item">
+										<div class="catalog__item" data-category="sauces">
+											<div class="product catalog__product" data-product-name="Соус солодкий чилі" data-product-price="30" data-product-weight="50" data-product-src="./images/section-catalog/sauces-1.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/sauces-1.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/sauces-1.jpg" alt="Sauces 1" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">30</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Соус солодкий чилі</div>
+													<div class="product__weight--value"><span class="product__weight">50</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Вода, цукор, перець чилі, крохмаль, оцет</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Вода</li>
+															<li class="product__description--list-item">Цукор</li>
+															<li class="product__description--list-item">Перець чилі</li>
+															<li class="product__description--list-item">Крохмаль</li>
+															<li class="product__description--list-item">Оцет</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">70</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+									
+										<div class="catalog__item" data-category="sauces">
+											<div class="product catalog__product" data-product-name="Соус Унагі" data-product-price="50" data-product-weight="50" data-product-src="./images/section-catalog/sauces-2.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/sauces-2.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/sauces-2.jpg" alt="Sauces 2" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">50</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Соус Унагі</div>
+													<div class="product__weight--value"><span class="product__weight">50</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Соєвий соус, цукор, крохмаль, мальтоза, глюкоза, оцет, крохмаль, ароматизований лікер, білковий гідролізат, сіль, екстракт дріжджів</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Соєвий соус</li>
+															<li class="product__description--list-item">Цукор</li>
+															<li class="product__description--list-item">Крохмаль</li>
+															<li class="product__description--list-item">Мальтоза</li>
+															<li class="product__description--list-item">Глюкоза</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">80</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="sauces">
+											<div class="product catalog__product" data-product-name="Соус Спайс" data-product-price="40" data-product-weight="50" data-product-src="./images/section-catalog/sauces-3.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/sauces-3.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/sauces-3.jpg" alt="Sauces 3" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">40</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Соус Спайс</div>
+													<div class="product__weight--value"><span class="product__weight">50</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Майонез, соус шрірача, масло кунжутне, фреш лимонний, цукор, сіль, аджіномото.</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Майонез</li>
+															<li class="product__description--list-item">Соус шрірача</li>
+															<li class="product__description--list-item">Масло кунжутне</li>
+															<li class="product__description--list-item">Фреш лимонний</li>
+															<li class="product__description--list-item">Цукор</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">60</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="sauces">
+											<div class="product catalog__product" data-product-name="Соус Цезар" data-product-price="45" data-product-weight="50" data-product-src="./images/section-catalog/sauces-4.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/sauces-4.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/sauces-4.jpg" alt="Sauces 4" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">45</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Соус Цезар</div>
+													<div class="product__weight--value"><span class="product__weight">50</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Майонез, анчоуси, каперси, соус ворчестер, часник, пармезан, фреш лимонний.</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Майонез</li>
+															<li class="product__description--list-item">Анчоуси</li>
+															<li class="product__description--list-item">Каперси</li>
+															<li class="product__description--list-item">Соус ворчестер</li>
+															<li class="product__description--list-item">Часник</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">70</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="sauces">
+											<div class="product catalog__product" data-product-name="Соус горіховий" data-product-price="65" data-product-weight="50" data-product-src="./images/section-catalog/sauces-5.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/sauces-5.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/sauces-5.jpg" alt="Sauces 5" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">65</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Соус горіховий</div>
+													<div class="product__weight--value"><span class="product__weight">50</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Масло рослинне, оцет, кунжут, сіль, вода, цукор, часник.</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Масло рослинне</li>
+															<li class="product__description--list-item">Оцет</li>
+															<li class="product__description--list-item">Кунжут</li>
+															<li class="product__description--list-item">Сіль</li>
+															<li class="product__description--list-item">Часник</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">50</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+	
+										<div class="catalog__item" data-category="sauces">
+											<div class="product catalog__product" data-product-name="Соус шрірача" data-product-price="45" data-product-weight="30" data-product-src="./images/section-catalog/sauces-6.jpg">
+												<picture>
+													<source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="./images/section-catalog/sauces-6.webp"/>
+													<img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/section-catalog/sauces-6.jpg" alt="Sauces 6" width="276" height="220"/>
+												</picture>
+												<div class="product__content">
+													<div class="product__price">
+														<span class="product__price--value">45</span>
+														<span class="product__currency">грн.</span>
+													</div>
+													<div class="product__title">Соус шрірача</div>
+													<div class="product__weight--value"><span class="product__weight">30</span>г</div>
+													<div class="product__description">
+														<div class="product__description--text">Цукор, сіль, перець чилі, часник, оцет, сорбат калію, натрій, ксантанова камедь.</div>
+														<div class="description--list">Склад:</div>
+														<ul class="product__description--list">
+															
+															<li class="product__description--list-item">Цукор</li>
+															<li class="product__description--list-item">Сіль</li>
+															<li class="product__description--list-item">Перець чилі</li>
+															<li class="product__description--list-item">Оцет</li>
+															<li class="product__description--list-item">Часник</li>
+														</ul>
+														<div class="product__nutrition--value">ккал <span class="product__nutrition">50</span></div>
+													</div>
+													<button class="btn product__btn" type="button" data-popup="popup-products">Додати</button>
+												</div>
+	
+											</div>
+										</div>
+									</div>						
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__inner">
+						<div class="footer__top">
+							<a href="#" class="footer__logo">
+								<img class="footer__logo--img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/icons/logo-bottom.svg" alt="Logo bottom" width="305" height="84">
+							</a>
+			                <div class="footer__top--wrapper">
+			
+								<div class="footer__top--phone">
+									<p class="footer__top--title">Номер для замовлення</p>
+									<div class="footer__top--phone-wrapper">
+										<img class="footer__top--phone-wrapper-img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/icons/call.svg" alt="Call" width="24" height="24">
+										<a class="phone-link" href="tel:+380978333811">+38(097)833-38-11</a>
+									</div>
+								</div>
+			
+			                    <div class="footer__top--socials">
+			                        <p class="footer__top--title">Ми у соцмережах</p>
+									<ul class="footer__top--socials-list">
+										<li class="footer__top--socials-list-item">
+											<a href="https://www.facebook.com/" class="footer__top--socials-list-item-link" aria-label="Facebook" target="_blank">
+												<img class="footer__top--socials-list-item-img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/socials/facebook.svg" alt="Facebook" width="23" height="20">
+											</a>
+										</li>
+										<li class="footer__top--socials-list-item">
+											<a href="https://www.instagram.com/" class="footer__top--socials-list-item-link" aria-label="Instagram" target="_blank">
+												<img class="footer__top--socials-list-item-img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/socials/instagram.svg" alt="Instagram" width="23" height="20">
+											</a>
+										</li>
+									</ul>
+								</div>
+			
+							</div>
+							
+			
+						</div>
+						<div class="footer__bottom">
+			                <div class="footer__bottom--copy">© YouMeal, 2022</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- popup-products -->
+			<div class="popup popup-products">
+				<div class="pupup__wrapper">
+					<div class="popup__inner">
+						<div class="popup__content js-product">
+							<button class="btn-close popup__btn-close popup-close"></button>
+							<h2 class="page-title popup__title">М'ясна бомба</h2>
+							<div class="popup-product--wrapper">
+								<div class="popup-product">
+									<img class="popup-product__img" src="" alt="">
+									<div class="popup-product__text">
+										<div class="popup-product__description--text">Супер м'ясна насолода! Велика рубана котлета зі свіжого яловичого м'яса підкорить вас своєю соковитістю, а хрумке листя салату додасть свіжості.</div>
+										<div class="popup-product__description--title">Склад:</div>
+										<ul class="popup-product__description--list">	
+											<li class="product__description--list-item">Пшенична булочка</li>
+											<li class="product__description--list-item">Котлети з яловичини</li>
+											<li class="product__description--list-item">Червона цибуля</li>
+											<li class="product__description--list-item">Листя салату</li>
+											<li class="product__description--list-item">Соус гірчичний</li>
+										</ul>
+										<span class="popup-product__weight">520г</span>
+										<span class="popup-product__nutrition">ккал 430</span>
+									</div>
+								</div>
+								<div class="popup-product__bottom">
+									<button class="popup-product__btn js-btn-add-to-cart">Додати</button>
+									<div class="popup-product__price">
+										<span class="popup-product__price-value js-product-price-value">689</span>
+										<span class="popup-product__currency">грн.</span>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.popup-products -->
+			
+			<!-- popup-delivery -->
+			<div class="popup popup-delivery">
+				<div class="pupup__wrapper">
+					<div class="popup__inner">
+						<div class="popup__content popup-delivery__content">
+							<button class="btn-close popup__btn-close popup-close"></button>
+							<div class="popup-delivery--wrapper">
+			                    <div class="popup-delivery__inner">
+									<div class="order">
+										<div class="order__img" style="background-image: url('./images/order/order-picture.png');">
+											
+										</div>
+										<div class="order__form">
+											<h2 class="page-title popup__title">Доставка</h2>
+											<form class="form form-send">
+												<input class="order-info-title _serialize" type="hidden" name="orderTitle">
+												<input class="order-info-price _serialize" type="hidden" name="price">
+												<input class="order-info-weight _serialize" type="hidden" name="weight">
+			                                    <input class="order-info-quantity _serialize" type="hidden" name="quantity">
+			
+												<input class="order-info-total-price-input _serialize" type="hidden" name="totalPrice">
+			
+			                                    <input class="order-info-total-count-items _serialize" type="hidden" name="totalCount">                              
+			                
+												<div class="form-send__top">
+													<input class="form__input _req _serialize" type="text" name="name" placeholder="Ваше ім'я">
+													<input class="form__input _req _serialize" type="text" name="phone" placeholder="Телефон">
+													<div class="options">
+														<div class="options__item">
+															<input id="deliveryMethodPickup" checked type="radio" value="pickup" name="deliveryRadio" class="options__input _serialize">
+															<label for="deliveryMethodPickup" class="options__label"><span>Самовивіз</span></label>
+														</div>
+														
+														<div class="options__item">
+															<input id="deliveryMethodDelivery" type="radio" value="delivery" name="deliveryRadio" class="options__input _serialize">
+															<label for="deliveryMethodDelivery" class="options__label"><span>Доставка</span></label>
+														</div>
+													</div>
+												</div>
+												<div class="form-send__bootom">
+													<input class="form__input address _serialize" type="text" name="address" placeholder="Вулиця, будинок, квартира">
+													<div class="form-send__bootom--bottom">
+														<input class="form__input floor _serialize" type="text" name="floor" placeholder="Поверх">
+														<input class="form__input intercom _serialize" type="text" name="intercom" placeholder="Домофон">
+													</div>
+													
+												</div>
+												<button class="btn form__btn" type="submit">Оформити</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.popup-delivery -->
+			
+			<!-- popup-thanks -->
+			<div class="popup popup-thanks">
+				<div class="pupup__wrapper">
+					<div class="popup__inner">
+						<div class="popup__content">
+							<button class="btn-close popup__btn-close popup-close"></button>
+							<h2 class="page-title popup__title">Успішно відправлено</h2>
+							<p class="popup__subtitle">Ми вже почали готувати ваше замовлення</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.popup-thanks -->
+			
+			<!-- popup-error -->
+			<div class="popup popup-error">
+				<div class="pupup__wrapper">
+					<div class="popup__inner">
+						<div class="popup__content">
+							<button class="btn-close popup__btn-close popup-close"></button>
+							<h2 class="page-title popup__title">Виникла помилка</h2>
+							<p class="popup__subtitle">Будь ласка, зробіть замовлення за номером <a class="phone-link" href="tel:+380978333811">+38(097)833-38-11</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.popup-error -->
+		</div>
+		
+		<script src="https://unpkg.com/focus-visible@5.2.0/dist/focus-visible.js"></script>
+		<script src="js/main.min.js"></script>
+	</body>
+</html>
+
+

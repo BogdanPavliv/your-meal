@@ -1,0 +1,169 @@
+<footer class="footer">
+	<div class="container">
+		<div class="footer__inner">
+			<div class="footer__top">
+				<a href="#" class="footer__logo">
+					<img class="footer__logo--img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/icons/logo-bottom.svg" alt="Logo bottom" width="305" height="84">
+				</a>
+                <div class="footer__top--wrapper">
+
+					<div class="footer__top--phone">
+						<p class="footer__top--title">Номер для замовлення</p>
+						<div class="footer__top--phone-wrapper">
+							<img class="footer__top--phone-wrapper-img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/icons/call.svg" alt="Call" width="24" height="24">
+							<a class="phone-link" href="tel:+380978333811">+38(097)833-38-11</a>
+						</div>
+					</div>
+
+                    <div class="footer__top--socials">
+                        <p class="footer__top--title">Ми у соцмережах</p>
+						<ul class="footer__top--socials-list">
+							<li class="footer__top--socials-list-item">
+								<a href="https://www.facebook.com/" class="footer__top--socials-list-item-link" aria-label="Facebook" target="_blank">
+									<img class="footer__top--socials-list-item-img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/socials/facebook.svg" alt="Facebook" width="23" height="20">
+								</a>
+							</li>
+							<li class="footer__top--socials-list-item">
+								<a href="https://www.instagram.com/" class="footer__top--socials-list-item-link" aria-label="Instagram" target="_blank">
+									<img class="footer__top--socials-list-item-img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./images/socials/instagram.svg" alt="Instagram" width="23" height="20">
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				
+
+			</div>
+			<div class="footer__bottom">
+                <div class="footer__bottom--copy">© YouMeal, 2022</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- popup-products -->
+<div class="popup popup-products">
+	<div class="pupup__wrapper">
+		<div class="popup__inner">
+			<div class="popup__content js-product">
+				<button class="btn-close popup__btn-close popup-close"></button>
+				<h2 class="page-title popup__title">М'ясна бомба</h2>
+				<div class="popup-product--wrapper">
+					<div class="popup-product">
+						<img class="popup-product__img" src="" alt="">
+						<div class="popup-product__text">
+							<div class="popup-product__description--text">Супер м'ясна насолода! Велика рубана котлета зі свіжого яловичого м'яса підкорить вас своєю соковитістю, а хрумке листя салату додасть свіжості.</div>
+							<div class="popup-product__description--title">Склад:</div>
+							<ul class="popup-product__description--list">	
+								<li class="product__description--list-item">Пшенична булочка</li>
+								<li class="product__description--list-item">Котлети з яловичини</li>
+								<li class="product__description--list-item">Червона цибуля</li>
+								<li class="product__description--list-item">Листя салату</li>
+								<li class="product__description--list-item">Соус гірчичний</li>
+							</ul>
+							<span class="popup-product__weight">520г</span>
+							<span class="popup-product__nutrition">ккал 430</span>
+						</div>
+					</div>
+					<div class="popup-product__bottom">
+						<button class="popup-product__btn js-btn-add-to-cart">Додати</button>
+						<div class="popup-product__price">
+							<span class="popup-product__price-value js-product-price-value">689</span>
+							<span class="popup-product__currency">грн.</span>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /.popup-products -->
+
+<!-- popup-delivery -->
+<div class="popup popup-delivery">
+	<div class="pupup__wrapper">
+		<div class="popup__inner">
+			<div class="popup__content popup-delivery__content">
+				<button class="btn-close popup__btn-close popup-close"></button>
+				<div class="popup-delivery--wrapper">
+                    <div class="popup-delivery__inner">
+						<div class="order">
+							<div class="order__img" style="background-image: url('./images/order/order-picture.png');">
+								
+							</div>
+							<div class="order__form">
+								<h2 class="page-title popup__title">Доставка</h2>
+								<form class="form form-send">
+									<input class="order-info-title _serialize" type="hidden" name="orderTitle">
+									<input class="order-info-price _serialize" type="hidden" name="price">
+									<input class="order-info-weight _serialize" type="hidden" name="weight">
+                                    <input class="order-info-quantity _serialize" type="hidden" name="quantity">
+
+									<input class="order-info-total-price-input _serialize" type="hidden" name="totalPrice">
+
+                                    <input class="order-info-total-count-items _serialize" type="hidden" name="totalCount">                              
+                
+									<div class="form-send__top">
+										<input class="form__input _req _serialize" type="text" name="name" placeholder="Ваше ім'я">
+										<input class="form__input _req _serialize" type="text" name="phone" placeholder="Телефон">
+										<div class="options">
+											<div class="options__item">
+												<input id="deliveryMethodPickup" checked type="radio" value="pickup" name="deliveryRadio" class="options__input _serialize">
+												<label for="deliveryMethodPickup" class="options__label"><span>Самовивіз</span></label>
+											</div>
+											
+											<div class="options__item">
+												<input id="deliveryMethodDelivery" type="radio" value="delivery" name="deliveryRadio" class="options__input _serialize">
+												<label for="deliveryMethodDelivery" class="options__label"><span>Доставка</span></label>
+											</div>
+										</div>
+									</div>
+									<div class="form-send__bootom">
+										<input class="form__input address _serialize" type="text" name="address" placeholder="Вулиця, будинок, квартира">
+										<div class="form-send__bootom--bottom">
+											<input class="form__input floor _serialize" type="text" name="floor" placeholder="Поверх">
+											<input class="form__input intercom _serialize" type="text" name="intercom" placeholder="Домофон">
+										</div>
+										
+									</div>
+									<button class="btn form__btn" type="submit">Оформити</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /.popup-delivery -->
+
+<!-- popup-thanks -->
+<div class="popup popup-thanks">
+	<div class="pupup__wrapper">
+		<div class="popup__inner">
+			<div class="popup__content">
+				<button class="btn-close popup__btn-close popup-close"></button>
+				<h2 class="page-title popup__title">Успішно відправлено</h2>
+				<p class="popup__subtitle">Ми вже почали готувати ваше замовлення</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /.popup-thanks -->
+
+<!-- popup-error -->
+<div class="popup popup-error">
+	<div class="pupup__wrapper">
+		<div class="popup__inner">
+			<div class="popup__content">
+				<button class="btn-close popup__btn-close popup-close"></button>
+				<h2 class="page-title popup__title">Виникла помилка</h2>
+				<p class="popup__subtitle">Будь ласка, зробіть замовлення за номером <a class="phone-link" href="tel:+380978333811">+38(097)833-38-11</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /.popup-error -->

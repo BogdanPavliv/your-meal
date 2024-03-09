@@ -1,0 +1,17 @@
+:root {
+	--container-width: 1320px;
+	--container-top-width: 764px;
+	--container-padding: 15px;
+
+	--font-main: "Nunito Regular", sans-serif;
+
+	--page-bg: #F9F9F9;
+	--text-color: #fff;
+	--text-color-black: #000;
+	--accent: #FF5C00;
+}
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}
