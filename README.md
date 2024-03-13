@@ -6,7 +6,6 @@
 - figma, optimized graphics, svg where it is possible
 - html,
 - scss,
-- gulp,
 - js,
 - php,
 - flex boxes,
