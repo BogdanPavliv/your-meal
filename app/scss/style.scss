@@ -252,7 +252,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
-    transition: background .2s ease;
+    transition: all .2s ease-in;
 }
 
 .popup-product__count {
@@ -379,6 +379,7 @@
     font-size: 12px;
     margin-bottom: 8px;
     outline: none;
+    transition: all 0.2s ease-in;
 }
 
 .form__input:hover {
@@ -557,7 +558,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    transition: border .2s ease;
+    transition: all .2s ease;
 }
 
 .catalog-nav__btn:hover {
@@ -571,6 +572,10 @@
 
 .catalog-nav__btn--active {
     background-color: #FFAB08;
+}
+
+.catalog-nav__btn:hover.catalog-nav__btn--active{
+    border: none;
 }
 
 .catalog__title {
@@ -810,6 +815,13 @@
     flex: 0 1 33.333%;
     padding: 0 15px;
     margin-bottom: 30px;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.catalog__item:hover {
+    opacity: 0.9;
+	transform: translateY(-5px);
 }
 
 .product {
@@ -877,7 +889,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
-    transition: background .2s ease;
+    transition: all 0.2s ease-in;
 }
 
 .btn:hover {
@@ -951,6 +963,7 @@
 	height: 36px;
 	background-color: #FF7020;
 	border-radius: 100%;
+    transition: all 0.2s ease-in;
 }
 
 .footer__top--socials-list-item-link:hover {
