@@ -3,7 +3,7 @@
 - git,
 - gulp,
 - npm,
-- figma, optimized graphics, svg where it is possible
+- figma, optimized graphics, svg where it is possible,
 - html,
 - scss,
 - javascript,
